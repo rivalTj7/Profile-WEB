@@ -191,6 +191,9 @@ export default function Contact() {
           <p className="text-gray-500 dark:text-gray-500 text-sm mt-2">
             Desarrollado con Next.js, TypeScript y Tailwind CSS
           </p>
+          <p className="text-gray-400 dark:text-gray-600 text-xs mt-1">
+            v1.0.0
+          </p>
         </motion.div>
       </div>
     </section>
