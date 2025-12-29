@@ -81,14 +81,13 @@ export default function Header() {
                 <Moon className="w-5 h-5 text-gray-700" />
               )}
             </button>
-            <a
-              href="/CV_RivaldoTojín.pdf"
-              download
+            <button
+              onClick={() => window.print()}
               className="flex items-center gap-2 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors duration-200"
             >
               <Download className="w-4 h-4" />
               Descargar CV
-            </a>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -128,14 +127,13 @@ export default function Header() {
                 {item.name}
               </a>
             ))}
-            <a
-              href="/CV_RivaldoTojín.pdf"
-              download
-              className="flex items-center gap-2 px-3 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700"
+            <button
+              onClick={() => window.print()}
+              className="flex items-center gap-2 px-3 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 w-full"
             >
               <Download className="w-4 h-4" />
               Descargar CV
-            </a>
+            </button>
           </div>
         </div>
       )}
