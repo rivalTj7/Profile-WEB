@@ -81,13 +81,19 @@ export default function Header() {
                 <Moon className="w-5 h-5 text-gray-700" />
               )}
             </button>
-            <button
-              onClick={() => window.print()}
-              className="flex items-center gap-2 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors duration-200"
-            >
-              <Download className="w-4 h-4" />
-              Descargar CV
-            </button>
+            <div className="relative group">
+              <button
+                disabled
+                className="flex items-center gap-2 px-4 py-2 bg-gray-400 text-white rounded-lg cursor-not-allowed opacity-60"
+              >
+                <Download className="w-4 h-4" />
+                Descargar CV
+              </button>
+              <div className="absolute hidden group-hover:block bottom-full mb-2 left-1/2 transform -translate-x-1/2 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg whitespace-nowrap z-50">
+                Funcionalidad en desarrollo
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-gray-900"></div>
+              </div>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -127,13 +133,15 @@ export default function Header() {
                 {item.name}
               </a>
             ))}
-            <button
-              onClick={() => window.print()}
-              className="flex items-center gap-2 px-3 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 w-full"
-            >
-              <Download className="w-4 h-4" />
-              Descargar CV
-            </button>
+            <div className="relative">
+              <button
+                disabled
+                className="flex items-center gap-2 px-3 py-2 bg-gray-400 text-white rounded-md cursor-not-allowed opacity-60 w-full"
+              >
+                <Download className="w-4 h-4" />
+                Descargar CV (Próximamente)
+              </button>
+            </div>
           </div>
         </div>
       )}
