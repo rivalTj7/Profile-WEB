@@ -120,3 +120,5 @@ export const cvData = {
     { language: "Inglés", level: "Básico" },
   ],
 };
+
+
