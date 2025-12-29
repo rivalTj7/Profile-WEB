@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+.git
+.github
+.vscode
+*.log
+.env
+.env*.local
+coverage
+*.tsbuildinfo
