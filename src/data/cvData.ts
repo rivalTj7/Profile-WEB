@@ -72,6 +72,13 @@ export const cvData = {
 
   projects: [
     {
+      name: "FlexiCore ERP - Enterprise Edition",
+      type: "Software Architect & Lead Developer",
+      description: "Diseño y desarrollo de sistema ERP empresarial completo con arquitectura de microservicios. Implementación de 15+ módulos de negocio incluyendo inventario, compras, ventas, facturación electrónica (FEL), contabilidad, nómina, manufactura y e-commerce. Sistema multi-tenant con SSO, 2FA, workflows automatizados y analítica con ML. Integración con bancos, SAT, marketplaces (Amazon, MercadoLibre) y plataformas de pago.",
+      technologies: ["Microservicios", "Java", "Spring Boot", "Node.js", "React", "Next.js", "Docker", "Kubernetes", "PostgreSQL", "MongoDB", "Redis", "Kafka", "ML", "API Gateway"],
+      link: "",
+    },
+    {
       name: "Sistema de Asistente Inteligente para Retroalimentación Automatizada",
       type: "Tesis de Ingeniería",
       description: "Diseño e implementación de un asistente inteligente basado en procesamiento de lenguaje natural para evaluación automatizada. Implementación de modelos de ML (SVM, Random Forest) para análisis de texto en Google Colab.",
