@@ -16,9 +16,16 @@ export const cvData = {
     {
       company: "Seguros G&T",
       position: "Ingeniero de Software Senior",
-      period: "08/01/2025 – ACTUALIDAD",
+      period: "16/12/2024 – ACTUALIDAD",
       description: "Ingeniero Senior especializado en desarrollo backend con Java y C++. Encargado de la arquitectura, diseño e implementación de sistemas core de seguros. Responsable de la revisión de código, mentorización de desarrolladores junior, optimización de rendimiento y escalabilidad de aplicaciones empresariales. Gestión de infraestructura y pipelines CI/CD con Azure DevOps.",
       technologies: ["Java", "C++", "Spring Boot", "Azure DevOps", "Microservicios", "SQL Server", "Docker", "Kubernetes"],
+    },
+    {
+      company: "Banco G&T Continental",
+      position: "Ingeniero de Desarrollo e Integración",
+      period: "08/01/2025 – 16/12/2024",
+      description: "Encargado de revisión de código, documentación técnica y gestión del CI/CD en proyectos de desarrollo interno. Administración de Azure DevOps, desarrollo de scripts en PowerShell y automatización de despliegues con Terraform para infraestructura en la nube. Creación de herramientas con Vite + React, implementación de sistemas de monitoreo con Prometheus y Grafana.",
+      technologies: ["Azure DevOps", "PowerShell", "Terraform", "Vite", "React", "Prometheus", "Grafana"],
     },
     {
       company: "CIMESA",
