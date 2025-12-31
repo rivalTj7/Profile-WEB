@@ -32,7 +32,7 @@ export default function Navigation() {
       animate={{ y: 0 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/90 dark:bg-dark-900/90 backdrop-blur-md shadow-lg'
+          ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg'
           : 'bg-transparent'
       }`}
     >
@@ -41,7 +41,7 @@ export default function Navigation() {
           {/* Logo */}
           <a
             href="#hero"
-            className="text-xl font-bold text-dark-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+            className="text-xl font-bold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
           >
             RT
           </a>
@@ -52,7 +52,7 @@ export default function Navigation() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-dark-700 dark:text-dark-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
+                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium"
               >
                 {item.name}
               </a>
@@ -62,7 +62,7 @@ export default function Navigation() {
                 href="https://github.com/rivalTj7"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-dark-700 dark:text-dark-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
                 <Github size={20} />
               </a>
@@ -70,7 +70,7 @@ export default function Navigation() {
                 href="https://www.linkedin.com/in/rivaldo-tojín-54286b307"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-dark-700 dark:text-dark-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
                 <Linkedin size={20} />
               </a>
@@ -80,7 +80,7 @@ export default function Navigation() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-dark-700 dark:text-dark-300 hover:text-primary-600 dark:hover:text-primary-400"
+            className="md:hidden text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -93,7 +93,7 @@ export default function Navigation() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="md:hidden bg-white dark:bg-dark-900 border-t border-dark-200 dark:border-dark-800"
+          className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800"
         >
           <div className="px-4 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
@@ -101,7 +101,7 @@ export default function Navigation() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 text-dark-700 dark:text-dark-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-dark-50 dark:hover:bg-dark-800 rounded-md transition-colors"
+                className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
               >
                 {item.name}
               </a>
@@ -111,7 +111,7 @@ export default function Navigation() {
                 href="https://github.com/rivalTj7"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-dark-700 dark:text-dark-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
                 <Github size={20} />
               </a>
@@ -119,7 +119,7 @@ export default function Navigation() {
                 href="https://www.linkedin.com/in/rivaldo-tojín-54286b307"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-dark-700 dark:text-dark-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
                 <Linkedin size={20} />
               </a>

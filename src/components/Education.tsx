@@ -67,16 +67,16 @@ const itemVariants = {
 
 export default function Education() {
   return (
-    <section id="education" className="section-container">
+    <section id="education" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900">
       <div className="max-w-5xl mx-auto">
         {/* Education */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-12"
+          className="mb-10 sm:mb-12"
         >
-          <h2 className="section-title">Educación</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-gray-900 dark:text-white text-center">Educación</h2>
 
           <motion.div
             variants={containerVariants}
@@ -89,26 +89,26 @@ export default function Education() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="card p-6"
+                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 p-6"
               >
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
                     <GraduationCap className="text-primary-600 dark:text-primary-400" size={24} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-dark-900 dark:text-white mb-1">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
                       {edu.degree}
                     </h3>
                     <p className="text-lg text-primary-600 dark:text-primary-400 font-semibold mb-2">
                       {edu.institution}
                     </p>
-                    <div className="flex flex-wrap gap-4 text-sm text-dark-600 dark:text-dark-400 mb-2">
+                    <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400 mb-2">
                       <span>{edu.period}</span>
                       <span>•</span>
                       <span>{edu.location}</span>
                     </div>
                     {edu.description && (
-                      <p className="text-dark-700 dark:text-dark-300 mt-3">
+                      <p className="text-gray-700 dark:text-gray-300 mt-3">
                         {edu.description}
                       </p>
                     )}
@@ -124,35 +124,36 @@ export default function Education() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          className="mt-8 sm:mt-12"
         >
-          <h2 className="section-title">Certificaciones</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-gray-900 dark:text-white text-center">Certificaciones</h2>
 
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-4"
+            className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4"
           >
             {certifications.map((cert, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="card p-4 hover:scale-105 transition-transform"
+                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 p-4 hover:scale-105"
               >
                 <div className="flex items-start gap-3">
                   <div className="p-2 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
                     <Award className="text-primary-600 dark:text-primary-400" size={20} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-dark-900 dark:text-white mb-1">
+                    <h3 className="font-bold text-gray-900 dark:text-white mb-1">>
                       {cert.title}
                     </h3>
                     <p className="text-sm text-primary-600 dark:text-primary-400 font-medium">
                       {cert.issuer}
                     </p>
-                    <div className="flex items-center gap-2 mt-2 text-xs text-dark-600 dark:text-dark-400">
-                      {cert.level && <span className="skill-badge text-xs">{cert.level}</span>}
+                    <div className="flex items-center gap-2 mt-2 text-xs text-gray-600 dark:text-gray-400">
+                      {cert.level && <span className="px-2 py-0.5 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-xs font-medium">{cert.level}</span>}
                       <span>{cert.date}</span>
                     </div>
                   </div>

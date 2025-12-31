@@ -8,16 +8,16 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800"
+      className="min-h-screen flex items-center justify-center pt-20 pb-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800"
     >
       <div className="max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6"
+            className="space-y-4 sm:space-y-6"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+              className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
             >
               {cvData.profile}
             </motion.p>
@@ -113,9 +113,9 @@ export default function Hero() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-primary-400 to-purple-600 rounded-full opacity-20 blur-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                className="w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 bg-gradient-to-br from-primary-400 to-purple-600 rounded-full opacity-20 blur-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               />
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-primary-500 to-purple-600 rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden">
+              <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 bg-gradient-to-br from-primary-500 to-purple-600 rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden">
                 <div className="text-9xl font-bold text-white opacity-20">
                   RT
                 </div>
