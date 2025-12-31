@@ -89,7 +89,7 @@ export default function Contact() {
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Redes Sociales
               </h3>
-              <div className="flex gap-4">
+              <div className="flex flex-wrap gap-3 sm:gap-4">
                 <a
                   href={cvData.personalInfo.github}
                   target="_blank"

@@ -15,7 +15,7 @@ export default function Experience() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Experiencia Profesional
           </h2>
           <div className="w-20 h-1 bg-primary-600 mx-auto rounded-full" />
@@ -39,10 +39,10 @@ export default function Experience() {
                         <Briefcase className="w-6 h-6 text-primary-600 dark:text-primary-400" />
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
                           {job.position}
                         </h3>
-                        <p className="text-lg text-primary-600 dark:text-primary-400 font-semibold">
+                        <p className="text-base sm:text-lg text-primary-600 dark:text-primary-400 font-semibold">
                           {job.company}
                         </p>
                       </div>

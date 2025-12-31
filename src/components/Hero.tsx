@@ -24,7 +24,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
                 {cvData.personalInfo.name}
               </h1>
             </motion.div>
@@ -34,7 +34,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              <h2 className="text-xl sm:text-2xl text-primary-600 dark:text-primary-400 font-semibold">
+              <h2 className="text-lg sm:text-xl md:text-2xl text-primary-600 dark:text-primary-400 font-semibold">
                 {cvData.personalInfo.title}
               </h2>
             </motion.div>
@@ -68,13 +68,13 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
-              className="flex gap-4 pt-4"
+              className="flex flex-wrap gap-3 sm:gap-4 pt-4"
             >
               <a
                 href={`mailto:${cvData.personalInfo.email}`}
-                className="flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-all duration-200 shadow-lg hover:shadow-xl text-sm sm:text-base"
               >
-                <Mail className="w-5 h-5" />
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 Contactar
               </a>
               <a
