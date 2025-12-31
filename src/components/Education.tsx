@@ -146,7 +146,7 @@ export default function Education() {
                     <Award className="text-primary-600 dark:text-primary-400" size={20} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-gray-900 dark:text-white mb-1">>
+                    <h3 className="font-bold text-gray-900 dark:text-white mb-1">
                       {cert.title}
                     </h3>
                     <p className="text-sm text-primary-600 dark:text-primary-400 font-medium">
